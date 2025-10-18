@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: hidden;
+}
+
+body{
+    background-image: linear-gradient(to right ,#1C1C1C, #000000);
+    height: 100%;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+    height: 100%;
+    position: relative;
+    align-items: center;
+
+
+    margin: 10% 5%;
+    gap: 3%;
+
+    background: rgba(233, 233, 233, 0.068);
+    border-radius: 16px;
+    backdrop-filter: blur(19px);
+    -webkit-backdrop-filter: blur(19px);
+    border: 1px solid rgba(193, 193, 193, 0.15);
+    box-shadow: #000000 5px 10px 25px;
+
+
+}
+
+.selecionar{
+
+    padding: 5%;
+    border-radius: 8px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    background: #c1b7a171;
+    border-radius: 16px;
+    backdrop-filter: blur(19px);
+    -webkit-backdrop-filter: blur(19px);
+    border: 1px solid rgba(193, 193, 193, 0.2);
+
+}
+
+.btn{
+    padding: 10px 50px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(88, 1, 1);
+    height: 10%;
+    width: 100%;
+    margin-top: 5%;
+    border-radius: 20px;
+    transition-duration: 200ms;
+}
+
+.btn:hover{
+    color: whitesmoke;
+    border: 0 none;
+    box-shadow: 2.5px 5px 5px black ;
+    transform: scale(1.1);
+}
+.btn:active{
+    transform: scale(1);
+}
+
+.voltar{
+    padding: 10px 50px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(88, 1, 1);
+    position: fixed;
+    height: 5%;
+    width: 10%;
+    margin:5%;
+    left: 80%;
+    border-radius: 20px;
+    transition-duration: 200ms;
+}
+
+
+.botoes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    padding: 5%;
+    margin: 0 10%;
+}
+
+.passar{
+    background-color: rgba(34, 139, 34, 0.247);
+}
+
+
