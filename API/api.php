@@ -25,6 +25,11 @@ switch ($acao) {
         echo json_encode(["success" => $ok]);
         exit;
 
+    case 'read':
+        $ok = $confissao->read($id);
+        echo json_encode(["success" => $ok]);
+        exit;
+
     default:
         echo json_encode(["success" => false, "error" => "Ação inválida"]);
         exit;
