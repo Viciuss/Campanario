@@ -26,7 +26,7 @@ switch ($acao) {
         exit;
 
     case 'read':
-        $ok = $confissao->read($id);
+        $ok = $confissao->read();
         echo json_encode(["success" => $ok]);
         exit;
 

@@ -32,8 +32,8 @@ class Confissao{
         } 
     }
 
-    public function read(int $id){
-        $sql = "SELECT * FROM confissoes WHERE ID = ?";
+    public function read(){
+        $sql = "SELECT * FROM confissoes  ORDER BY RAND() LIMIT 1";
 
         $stmt = $this->conn->prepare($sql);
 
@@ -42,7 +42,6 @@ class Confissao{
             return false;
         }
 
-        $stmt->bind_param('i',$id);
 
         if ($stmt->execute()) {
             $resposta = $stmt->get_result();
