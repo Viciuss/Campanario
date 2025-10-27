@@ -22,12 +22,19 @@ switch ($acao) {
         }
 
         $ok = $confissao->add($texto);
-        echo json_encode(["success" => $ok]);
+        echo json_encode($ok);
         exit;
 
     case 'read':
         $ok = $confissao->read();
-        echo json_encode(["success" => $ok]);
+        echo json_encode($ok);
+        exit;
+
+
+    case 'apagar':
+        $id = $_POST["idConf"];
+        $resposta = $confissao->apagar($id);
+        echo json_encode($resposta);
         exit;
 
     default:
